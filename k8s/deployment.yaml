@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: customer-service
-          image: koustav12/customerservice:latest
+          image: <IMAGE_PLACEHOLDER>
           ports:
             - containerPort: 8081
