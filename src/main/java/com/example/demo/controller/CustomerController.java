@@ -42,7 +42,7 @@ public class CustomerController {
 	}
 
 	@GetMapping("/hello")
-	public String getAllCustomer(){
+	public String hello(){
 		return "Hello from Kubernetes!!!";
 	}
 
