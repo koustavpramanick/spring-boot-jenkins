@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-service
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: customer-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: customer-service
+    spec:
+      containers:
+        - name: customer-service
+          image: <IMAGE_PLACEHOLDER>
+          ports:
+            - containerPort: 8081
